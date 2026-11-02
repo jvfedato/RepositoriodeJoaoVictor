@@ -38,4 +38,18 @@ def posiciona_frota(frota):
                 coluna = posicao[1]
                 grid[linha][coluna] = 1
     return grid
-    
+
+def afundados(frota, tabuleiro):
+    contador = 0
+    for nome in frota:
+        for navio in frota[nome]:
+            afundado = True
+            for posicao in navio:
+                linha = posicao[0]
+                coluna = posicao[1]
+                if tabuleiro[linha][coluna] != 'X':
+                    afundado = False
+                    break
+            if afundado:
+                contador += 1
+    return contador   
