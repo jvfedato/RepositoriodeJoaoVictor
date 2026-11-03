@@ -3,10 +3,10 @@ from funcoes import define_posicoes, preenche_frota, posicao_valida
 frota = {}
 
 tabela = {
-    "porta-aviões": [],
-    "navio-tanque": [],
-    "contratorpedeiro": [],
-    "submarino": [],
+    "porta-aviões": [1, 4],
+    "navio-tanque": [2, 3],
+    "contratorpedeiro": [3, 2],
+    "submarino": [4, 1],
 }
 
 for nome in tabela:
