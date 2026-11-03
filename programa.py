@@ -2,16 +2,16 @@ from funcoes import define_posicoes, preenche_frota, posicao_valida
 
 frota = {}
 
-tabela = {
+tamanhos = {
     "porta-aviões": [1, 4],
     "navio-tanque": [2, 3],
     "contratorpedeiro": [3, 2],
     "submarino": [4, 1],
 }
 
-for nome in tabela:
-    quantidade = tabela[nome][0]
-    tamanho = tabela[nome][1]
+for nome in tamanhos:
+    quantidade = tamanhos[nome][0]
+    tamanho = tamanhos[nome][1]
     for i in range(quantidade):
         while True:
             print(f"Insira as informações referentes ao navio {nome} que possui tamanho {tamanho}")
